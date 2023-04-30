@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -108,7 +114,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.075,
+        "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
@@ -164,8 +170,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -195,6 +208,40 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.25,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.25,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Split Comms",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
@@ -290,112 +337,20 @@
         "pattern": "thumbfan_far_home"
       },
       {
-        "netclass": "Default",
-        "pattern": "RAW"
+        "netclass": "Split Comms",
+        "pattern": "GP8"
       },
       {
-        "netclass": "Default",
-        "pattern": "RST"
+        "netclass": "Split Comms",
+        "pattern": "GP9"
       },
       {
-        "netclass": "Default",
-        "pattern": "VCC"
+        "netclass": "Power",
+        "pattern": "3V3"
       },
       {
-        "netclass": "Default",
-        "pattern": "F4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "F5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "F6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "F7"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "D3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "D2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "D1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "D0"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "D4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "C6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "D7"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "E6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B7"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "C7"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "F1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "F0"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "D5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B0"
+        "netclass": "Power",
+        "pattern": "5V"
       }
     ]
   },
