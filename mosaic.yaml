@@ -1,8 +1,8 @@
 units:
   kx: cx
   ky: cy
-  px: 100 - 5kx
-  py: 5 # (100 - 3ky) / 2
+  px: 100 - 5.2kx
+  py: 6 # (100 - 3ky) / 2
 
 points:
   zones:
@@ -13,22 +13,30 @@ points:
         pinky:
           key:
             stagger: 0
+            column_net: D0
         ring:
           key:
             stagger: 0
+            column_net: D1
         middle:
           key:
             stagger: 0
+            column_net: D2
         index:
           key:
             stagger: 0
+            column_net: D3
         inner:
           key:
             stagger: 0 
+            column_net: D4
       rows:
         bottom:
+          row_net: D8
         home:
+          row_net: D9
         top:
+          row_net: D10
     thumbfan:
       anchor:
         ref: matrix_middle_bottom
@@ -36,12 +44,16 @@ points:
       columns:
         near:
           key:
+            column_net: D2
         home:
           key:
+            column_net: D3
         far:
           key:
+            column_net: D4
       rows:
         home:
+          row_net: D5
   key:
     padding: 1ky
     spread: 1kx
@@ -57,23 +69,25 @@ outlines:
       points:
         # NW
         - ref: matrix_pinky_top
-          shift: [-0.5kx, 0.5ky]
-        # N
+          shift: [-0.6kx, 0.6ky]
         - ref: matrix_middle_top
-          shift: [px, 1.5ky + py]
+          shift: [0.5kx, 0.6ky]
         # NE
+        - ref: matrix_index_top
+          shift: [0, 1.75ky]
         - ref: matrix_inner_top
-          shift: [px + 0.5kx, 1.5ky + py]
+          shift: [px + 0.6kx, 1.75ky]
         # SE
         - ref: thumbfan_far_home
-          shift: [0.5kx, -0.5ky]
-        # S
+          shift: [0.6kx, -0.5ky]
         - ref: thumbfan_near_home
           shift: [-0.5kx, -0.5ky]
         # SW
+        - ref: matrix_ring_bottom
+          shift: [0.5kx, -0.6ky]
         - ref: matrix_pinky_bottom
-          shift: [-0.5kx, -0.5ky]
-      fillet: 2
+          shift: [-0.6kx, -0.6ky]
+      fillet: 3
 
 pcbs:
   mosaic_pcb:
@@ -82,32 +96,40 @@ pcbs:
         outline: mosaic_bottom_plate
         footprints:
     footprints:
-      choc:
+      choc_hotswap:
         what: choc
         where: true
         params:
           keycaps: true
           reverse: true
-          hotswap: false
-          from: "{{name}}"
-          to: GND
-      elitec:
-        what: elitec
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      xiao:
+        what: xiao
         where:
           ref: matrix_index_top
-          shift: [0.6kx, 1.2ky]
-          rotate: 0
+          shift: [0.75kx, 1.15ky]
+          rotate: 90
       trrs:
         what: trrs
         where:
           ref: matrix_inner_top
-          shift: [0.85kx, 1.5ky + py]
+          shift: [0.7kx, 1.75ky]
           rotate: 0
         params:
           A: GND  # ring
-          B: VCC  # ring
-          C: D2   # tip
-          D: D3   # sleeve
+          B: SV  # ring
+          C: D6   # TX
+          D: D7   # RX
           reverse: true
           symmetric: false
           cross: true

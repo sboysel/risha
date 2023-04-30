@@ -1,8 +1,7 @@
-all: output/pcbs/mosaic_pcb.kicad_pcb 
-
-#output/pcbs/mosaic_pcb_front.jpg \
-#output/pcbs/mosaic_pcb_back.jpg \
-#img/mosaic_pcb_front_small.jpg
+all: output/pcbs/mosaic_pcb.kicad_pcb \
+	output/pcbs/mosaic_pcb_front.jpg \
+	output/pcbs/mosaic_pcb_back.jpg \
+	img/mosaic_pcb_front_small.jpg
 
 output/pcbs/mosaic_pcb.kicad_pcb: mosaic.yaml
 	npm run gen
