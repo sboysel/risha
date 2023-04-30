@@ -1,8 +1,7 @@
 units:
   kx: cx
   ky: cy
-  px: 100 - 5kx
-  py: 5 # (100 - 3ky) / 2
+  px: 100 - 5kx - 0.01
 
 points:
   zones:
@@ -13,35 +12,47 @@ points:
         pinky:
           key:
             stagger: 0
+            column_net: D0
         ring:
           key:
             stagger: 0
+            column_net: D1
         middle:
           key:
             stagger: 0
+            column_net: D2
         index:
           key:
             stagger: 0
+            column_net: D3
         inner:
           key:
             stagger: 0 
+            column_net: D4
       rows:
         bottom:
+          row_net: D8
         home:
+          row_net: D9
         top:
+          row_net: D10
     thumbfan:
       anchor:
         ref: matrix_middle_bottom
-        shift: [px, -1ky - py]
+        shift: [px, -2ky]
       columns:
         near:
           key:
+            column_net: D2
         home:
           key:
+            column_net: D3
         far:
           key:
+            column_net: D4
       rows:
         home:
+          row_net: D5
   key:
     padding: 1ky
     spread: 1kx
@@ -58,22 +69,20 @@ outlines:
         # NW
         - ref: matrix_pinky_top
           shift: [-0.5kx, 0.5ky]
-        # N
-        - ref: matrix_middle_top
-          shift: [px, 1.5ky + py]
         # NE
         - ref: matrix_inner_top
-          shift: [px + 0.5kx, 1.5ky + py]
+          shift: [0.5kx, 0.5ky]
         # SE
+        - ref: matrix_inner_bottom
+          shift: [px + 0.5kx, -0.65ky]
         - ref: thumbfan_far_home
           shift: [0.5kx, -0.5ky]
-        # S
         - ref: thumbfan_near_home
           shift: [-0.5kx, -0.5ky]
         # SW
         - ref: matrix_pinky_bottom
-          shift: [-0.5kx, -0.5ky]
-      fillet: 2
+          shift: [-0.5kx, -0.5ky - 1.25ky]
+      fillet: 3
 
 pcbs:
   mosaic_pcb:
@@ -90,24 +99,74 @@ pcbs:
           reverse: true
           hotswap: false
           from: "{{name}}"
-          to: GND
-      elitec:
-        what: elitec
+          to: GND 
+      rp2040_zero:
+        what: rp2040_zero_tht_pads
         where:
-          ref: matrix_index_top
-          shift: [0.6kx, 1.2ky]
-          rotate: 0
+          ref: matrix_pinky_bottom
+          shift: [0.15kx, -1.1ky]
+          rotate: 90
+        params:
+          GP0: matrix_pinky_top
+          GP1: matrix_pinky_home
+          GP2: matrix_pinky_bottom
+          GP3: matrix_ring_bottom
+          GP4: matrix_ring_home
+          GP5: matrix_ring_top
+          GP6: matrix_middle_top
+          GP7: matrix_middle_home
+          GP10: matrix_middle_bottom
+          GP11: matrix_index_top
+          GP12: matrix_index_home
+          GP13: matrix_index_bottom
+          GP14: matrix_inner_bottom
+          GP15: matrix_inner_home
+          GP26: matrix_inner_top
+          GP27: thumbfan_near_home
+          GP28: thumbfan_home_home
+          GP29: thumbfan_far_home
       trrs:
         what: trrs
         where:
-          ref: matrix_inner_top
-          shift: [0.85kx, 1.5ky + py]
-          rotate: 0
+          ref: matrix_inner_bottom
+          shift: [1.05kx, -1ky]
+          rotate: 270
         params:
-          A: GND  # ring
-          B: VCC  # ring
-          C: D2   # tip
-          D: D3   # sleeve
+          A: 3V3  # ring
+          B: GND  # ring
+          C: GP8   # TX
+          D: GP9   # RX
           reverse: true
           symmetric: false
           cross: true
+      mountinghole_w:
+        what: mountinghole
+        where:
+          ref: matrix_pinky_top
+          shift: [0.5kx, -0.5ky]
+      mountinghole_s:
+        what: mountinghole
+        where:
+          ref: thumbfan_near_home
+          shift: [0.5kx, 0.5ky]
+      mountinghole_n:
+        what: mountinghole
+        where:
+          ref: matrix_inner_top
+          shift: [-0.5kx, -0.5ky]
+      jlc_text:
+        what: text 
+        where:
+          ref: matrix_middle_home
+          shift: [0, -0.35ky]
+        params:
+          text: 'JLCJLCJLCJLC'
+      version_text:
+        what: text 
+        where:
+          ref: matrix_index_bottom
+          shift: [0, -0.5ky]
+        params:
+          text: 'mosaic v0.0.1'
+
+
