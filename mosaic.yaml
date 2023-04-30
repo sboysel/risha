@@ -1,0 +1,113 @@
+units:
+  kx: cx
+  ky: cy
+  px: 100 - 5kx
+  py: 5 # (100 - 3ky) / 2
+
+points:
+  zones:
+    matrix:
+      anchor:
+        shift: [8kx, -8ky]
+      columns:
+        pinky:
+          key:
+            stagger: 0
+        ring:
+          key:
+            stagger: 0
+        middle:
+          key:
+            stagger: 0
+        index:
+          key:
+            stagger: 0
+        inner:
+          key:
+            stagger: 0 
+      rows:
+        bottom:
+        home:
+        top:
+    thumbfan:
+      anchor:
+        ref: matrix_middle_bottom
+        shift: [px, -1ky - py]
+      columns:
+        near:
+          key:
+        home:
+          key:
+        far:
+          key:
+      rows:
+        home:
+  key:
+    padding: 1ky
+    spread: 1kx
+
+outlines:
+  _switches:
+    - what: rectangle
+      where: true
+      size: 14
+      bound: false
+  mosaic_bottom_plate:
+    - what: polygon
+      points:
+        # NW
+        - ref: matrix_pinky_top
+          shift: [-0.5kx, 0.5ky]
+        # N
+        - ref: matrix_middle_top
+          shift: [px, 1.5ky + py]
+        # NE
+        - ref: matrix_inner_top
+          shift: [px + 0.5kx, 1.5ky + py]
+        # SE
+        - ref: thumbfan_far_home
+          shift: [0.5kx, -0.5ky]
+        # S
+        - ref: thumbfan_near_home
+          shift: [-0.5kx, -0.5ky]
+        # SW
+        - ref: matrix_pinky_bottom
+          shift: [-0.5kx, -0.5ky]
+      fillet: 2
+
+pcbs:
+  mosaic_pcb:
+    outlines:
+      main:
+        outline: mosaic_bottom_plate
+        footprints:
+    footprints:
+      choc:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: false
+          from: "{{name}}"
+          to: GND
+      elitec:
+        what: elitec
+        where:
+          ref: matrix_index_top
+          shift: [0.6kx, 1.2ky]
+          rotate: 0
+      trrs:
+        what: trrs
+        where:
+          ref: matrix_inner_top
+          shift: [0.85kx, 1.5ky + py]
+          rotate: 0
+        params:
+          A: GND  # ring
+          B: VCC  # ring
+          C: D2   # tip
+          D: D3   # sleeve
+          reverse: true
+          symmetric: false
+          cross: true
