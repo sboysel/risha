@@ -146,3 +146,34 @@ pcbs:
           reverse: true
           symmetric: false
           cross: true
+      mountinghole_w:
+        what: mountinghole
+        where:
+          ref: matrix_pinky_top
+          shift: [0.5kx, -0.5ky]
+      mountinghole_s:
+        what: mountinghole
+        where:
+          ref: thumbfan_near_home
+          shift: [0.5kx, 0.5ky]
+      mountinghole_n:
+        what: mountinghole
+        where:
+          ref: matrix_inner_top
+          shift: [-0.5kx, -0.5ky]
+      jlc_text:
+        what: text 
+        where:
+          ref: matrix_middle_home
+          shift: [0, -0.35ky]
+        params:
+          text: 'JLCJLCJLCJLC'
+      version_text:
+        what: text 
+        where:
+          ref: matrix_index_bottom
+          shift: [0, -0.5ky]
+        params:
+          text: 'mosaic v0.0.1'
+
+
