@@ -1,7 +1,7 @@
 units:
   kx: cx
   ky: cy
-  px: 100 - 5.2kx
+  px: 100 - 5kx - 0.01
 
 points:
   zones:
@@ -39,7 +39,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_middle_bottom
-        shift: [px, -1.6ky]
+        shift: [px, -2ky]
       columns:
         near:
           key:
@@ -68,20 +68,20 @@ outlines:
       points:
         # NW
         - ref: matrix_pinky_top
-          shift: [-0.6kx, 0.6ky]
+          shift: [-0.5kx, 0.5ky]
         # NE
         - ref: matrix_inner_top
-          shift: [0.6kx, 0.6ky]
+          shift: [0.5kx, 0.5ky]
         # SE
         - ref: matrix_inner_bottom
-          shift: [px + 0.6kx, -0.5ky]
+          shift: [px + 0.5kx, -0.5ky]
         - ref: thumbfan_far_home
-          shift: [0.6kx, -0.6ky]
+          shift: [0.5kx, -0.5ky]
         - ref: thumbfan_near_home
-          shift: [-0.6kx, -0.6ky]
+          shift: [-0.5kx, -0.5ky]
         # SW
         - ref: matrix_pinky_bottom
-          shift: [-0.6kx, -0.6ky - 1.25ky]
+          shift: [-0.5kx, -0.5ky - 1.25ky]
       fillet: 3
 
 pcbs:
@@ -91,27 +91,20 @@ pcbs:
         outline: mosaic_bottom_plate
         footprints:
     footprints:
-      choc_hotswap:
+      choc:
         what: choc
         where: true
         params:
           keycaps: true
           reverse: true
-          hotswap: true
+          hotswap: false
           from: "{{name}}"
           to: GND 
-      via:
-        what: via
-        where: true
-        adjust:
-          shift: [0, 3]
-        params:
-          net: "{{name}}"
       rp2040_zero:
         what: rp2040_zero_tht_pads
         where:
           ref: matrix_pinky_bottom
-          shift: [0.1kx, -1.1ky]
+          shift: [0.15kx, -1.1ky]
           rotate: 90
         params:
           GP0: matrix_pinky_top
