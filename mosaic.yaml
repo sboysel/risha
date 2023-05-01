@@ -167,6 +167,6 @@ pcbs:
           ref: matrix_index_bottom
           shift: [0, -0.5ky]
         params:
-          text: 'mosaic v0.0.1'
+          text: 'mosaic v0.1.0'
 
 
