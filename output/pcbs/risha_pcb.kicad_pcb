@@ -1,0 +1,1606 @@
+
+            
+(kicad_pcb (version 20171130) (host pcbnew 5.1.6)
+
+  (page A3)
+  (title_block
+    (title risha_pcb)
+    (rev v1.0.0)
+    (company Unknown)
+  )
+
+  (general
+    (thickness 1.6)
+  )
+
+  (layers
+    (0 F.Cu signal)
+    (31 B.Cu signal)
+    (32 B.Adhes user)
+    (33 F.Adhes user)
+    (34 B.Paste user)
+    (35 F.Paste user)
+    (36 B.SilkS user)
+    (37 F.SilkS user)
+    (38 B.Mask user)
+    (39 F.Mask user)
+    (40 Dwgs.User user)
+    (41 Cmts.User user)
+    (42 Eco1.User user)
+    (43 Eco2.User user)
+    (44 Edge.Cuts user)
+    (45 Margin user)
+    (46 B.CrtYd user)
+    (47 F.CrtYd user)
+    (48 B.Fab user)
+    (49 F.Fab user)
+  )
+
+  (setup
+    (last_trace_width 0.25)
+    (trace_clearance 0.2)
+    (zone_clearance 0.508)
+    (zone_45_only no)
+    (trace_min 0.2)
+    (via_size 0.8)
+    (via_drill 0.4)
+    (via_min_size 0.4)
+    (via_min_drill 0.3)
+    (uvia_size 0.3)
+    (uvia_drill 0.1)
+    (uvias_allowed no)
+    (uvia_min_size 0.2)
+    (uvia_min_drill 0.1)
+    (edge_width 0.05)
+    (segment_width 0.2)
+    (pcb_text_width 0.3)
+    (pcb_text_size 1.5 1.5)
+    (mod_edge_width 0.12)
+    (mod_text_size 1 1)
+    (mod_text_width 0.15)
+    (pad_size 1.524 1.524)
+    (pad_drill 0.762)
+    (pad_to_mask_clearance 0.05)
+    (aux_axis_origin 0 0)
+    (visible_elements FFFFFF7F)
+    (pcbplotparams
+      (layerselection 0x010fc_ffffffff)
+      (usegerberextensions false)
+      (usegerberattributes true)
+      (usegerberadvancedattributes true)
+      (creategerberjobfile true)
+      (excludeedgelayer true)
+      (linewidth 0.100000)
+      (plotframeref false)
+      (viasonmask false)
+      (mode 1)
+      (useauxorigin false)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (psnegative false)
+      (psa4output false)
+      (plotreference true)
+      (plotvalue true)
+      (plotinvisibletext false)
+      (padsonsilk false)
+      (subtractmaskfromsilk false)
+      (outputformat 1)
+      (mirror false)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory ""))
+  )
+
+            (net 0 "")
+(net 1 "matrix_outer_mod")
+(net 2 "GND")
+(net 3 "matrix_outer_bottom")
+(net 4 "matrix_outer_home")
+(net 5 "matrix_outer_top")
+(net 6 "matrix_pinky_mod")
+(net 7 "matrix_pinky_bottom")
+(net 8 "matrix_pinky_home")
+(net 9 "matrix_pinky_top")
+(net 10 "matrix_ring_mod")
+(net 11 "matrix_ring_bottom")
+(net 12 "matrix_ring_home")
+(net 13 "matrix_ring_top")
+(net 14 "matrix_middle_mod")
+(net 15 "matrix_middle_bottom")
+(net 16 "matrix_middle_home")
+(net 17 "matrix_middle_top")
+(net 18 "matrix_index_mod")
+(net 19 "matrix_index_bottom")
+(net 20 "matrix_index_home")
+(net 21 "matrix_index_top")
+(net 22 "matrix_inner_mod")
+(net 23 "matrix_inner_bottom")
+(net 24 "matrix_inner_home")
+(net 25 "matrix_inner_top")
+(net 26 "GP0")
+(net 27 "GP1")
+(net 28 "GP2")
+(net 29 "GP3")
+(net 30 "GP4")
+(net 31 "GP5")
+(net 32 "GP6")
+(net 33 "GP7")
+(net 34 "GP8")
+(net 35 "GP9")
+(net 36 "GP10")
+(net 37 "GP11")
+(net 38 "GP12")
+(net 39 "GP13")
+(net 40 "GP14")
+(net 41 "GP15")
+(net 42 "GP16")
+(net 43 "GP17")
+(net 44 "GP18")
+(net 45 "GP19")
+(net 46 "GP20")
+(net 47 "GP21")
+(net 48 "GP22")
+(net 49 "RUN")
+(net 50 "GP26")
+(net 51 "GP27")
+(net 52 "AGND")
+(net 53 "GP28")
+(net 54 "ADC_VREF")
+(net 55 "3V3")
+(net 56 "3V3_EN")
+(net 57 "VSYS")
+(net 58 "VBUS")
+            
+  (net_class Default "This is the default net class."
+    (clearance 0.2)
+    (trace_width 0.25)
+    (via_dia 0.8)
+    (via_drill 0.4)
+    (uvia_dia 0.3)
+    (uvia_drill 0.1)
+    (add_net "")
+(add_net "matrix_outer_mod")
+(add_net "GND")
+(add_net "matrix_outer_bottom")
+(add_net "matrix_outer_home")
+(add_net "matrix_outer_top")
+(add_net "matrix_pinky_mod")
+(add_net "matrix_pinky_bottom")
+(add_net "matrix_pinky_home")
+(add_net "matrix_pinky_top")
+(add_net "matrix_ring_mod")
+(add_net "matrix_ring_bottom")
+(add_net "matrix_ring_home")
+(add_net "matrix_ring_top")
+(add_net "matrix_middle_mod")
+(add_net "matrix_middle_bottom")
+(add_net "matrix_middle_home")
+(add_net "matrix_middle_top")
+(add_net "matrix_index_mod")
+(add_net "matrix_index_bottom")
+(add_net "matrix_index_home")
+(add_net "matrix_index_top")
+(add_net "matrix_inner_mod")
+(add_net "matrix_inner_bottom")
+(add_net "matrix_inner_home")
+(add_net "matrix_inner_top")
+(add_net "GP0")
+(add_net "GP1")
+(add_net "GP2")
+(add_net "GP3")
+(add_net "GP4")
+(add_net "GP5")
+(add_net "GP6")
+(add_net "GP7")
+(add_net "GP8")
+(add_net "GP9")
+(add_net "GP10")
+(add_net "GP11")
+(add_net "GP12")
+(add_net "GP13")
+(add_net "GP14")
+(add_net "GP15")
+(add_net "GP16")
+(add_net "GP17")
+(add_net "GP18")
+(add_net "GP19")
+(add_net "GP20")
+(add_net "GP21")
+(add_net "GP22")
+(add_net "RUN")
+(add_net "GP26")
+(add_net "GP27")
+(add_net "AGND")
+(add_net "GP28")
+(add_net "ADC_VREF")
+(add_net "3V3")
+(add_net "3V3_EN")
+(add_net "VSYS")
+(add_net "VBUS")
+  )
+
+            
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 152.4 152.4 180)
+
+      
+      (fp_text reference "S1" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 1 "matrix_outer_mod"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 1 "matrix_outer_mod"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 152.4 133.35 180)
+
+      
+      (fp_text reference "S2" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 3 "matrix_outer_bottom"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 3 "matrix_outer_bottom"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 152.4 114.3 180)
+
+      
+      (fp_text reference "S3" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 4 "matrix_outer_home"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 4 "matrix_outer_home"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 152.4 95.25 180)
+
+      
+      (fp_text reference "S4" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 5 "matrix_outer_top"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 5 "matrix_outer_top"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 171.4 152.4 180)
+
+      
+      (fp_text reference "S5" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 6 "matrix_pinky_mod"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 6 "matrix_pinky_mod"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 171.4 133.35 180)
+
+      
+      (fp_text reference "S6" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 7 "matrix_pinky_bottom"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 7 "matrix_pinky_bottom"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 171.4 114.3 180)
+
+      
+      (fp_text reference "S7" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 8 "matrix_pinky_home"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 8 "matrix_pinky_home"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 171.4 95.25 180)
+
+      
+      (fp_text reference "S8" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 9 "matrix_pinky_top"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 9 "matrix_pinky_top"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 190.4 152.4 180)
+
+      
+      (fp_text reference "S9" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 10 "matrix_ring_mod"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 10 "matrix_ring_mod"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 190.4 133.35 180)
+
+      
+      (fp_text reference "S10" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 11 "matrix_ring_bottom"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 11 "matrix_ring_bottom"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 190.4 114.3 180)
+
+      
+      (fp_text reference "S11" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 12 "matrix_ring_home"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 12 "matrix_ring_home"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 190.4 95.25 180)
+
+      
+      (fp_text reference "S12" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 13 "matrix_ring_top"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 13 "matrix_ring_top"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 209.4 152.4 180)
+
+      
+      (fp_text reference "S13" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 14 "matrix_middle_mod"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 14 "matrix_middle_mod"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 209.4 133.35 180)
+
+      
+      (fp_text reference "S14" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 15 "matrix_middle_bottom"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 15 "matrix_middle_bottom"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 209.4 114.3 180)
+
+      
+      (fp_text reference "S15" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 16 "matrix_middle_home"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 16 "matrix_middle_home"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 209.4 95.25 180)
+
+      
+      (fp_text reference "S16" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 17 "matrix_middle_top"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 17 "matrix_middle_top"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 228.4 152.4 180)
+
+      
+      (fp_text reference "S17" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 18 "matrix_index_mod"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 18 "matrix_index_mod"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 228.4 133.35 180)
+
+      
+      (fp_text reference "S18" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 19 "matrix_index_bottom"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 19 "matrix_index_bottom"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 228.4 114.3 180)
+
+      
+      (fp_text reference "S19" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 20 "matrix_index_home"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 20 "matrix_index_home"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 228.4 95.25 180)
+
+      
+      (fp_text reference "S20" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 21 "matrix_index_top"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 21 "matrix_index_top"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 247.4 152.4 180)
+
+      
+      (fp_text reference "S21" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 22 "matrix_inner_mod"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 22 "matrix_inner_mod"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 247.4 133.35 180)
+
+      
+      (fp_text reference "S22" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 23 "matrix_inner_bottom"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 23 "matrix_inner_bottom"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 247.4 114.3 180)
+
+      
+      (fp_text reference "S23" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 24 "matrix_inner_home"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 24 "matrix_inner_home"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+        
+      (module MX (layer F.Cu) (tedit 5DD4F656)
+      (at 247.4 95.25 180)
+
+      
+      (fp_text reference "S24" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+      (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+
+      
+      (fp_line (start -7 -6) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -6 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -6 -7) (end -7 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -7 7) (end -7 6) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 6) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 6 -7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 6 7) (end 7 7) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 7 -7) (end 7 -6) (layer Dwgs.User) (width 0.15))
+    
+      
+      (pad "" np_thru_hole circle (at 0 0) (size 3.9878 3.9878) (drill 3.9878) (layers *.Cu *.Mask))
+
+      
+      (pad "" np_thru_hole circle (at 5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.08 0) (size 1.7018 1.7018) (drill 1.7018) (layers *.Cu *.Mask))
+      
+        
+      
+      (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 -9.5) (end 9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 9.5 9.5) (end -9.5 9.5) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -9.5 9.5) (end -9.5 -9.5) (layer Dwgs.User) (width 0.15))
+      
+        
+            
+            (pad 1 thru_hole circle (at 2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 25 "matrix_inner_top"))
+            (pad 2 thru_hole circle (at -3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          
+        
+            
+            (pad 1 thru_hole circle (at -2.54 -5.08) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 25 "matrix_inner_top"))
+            (pad 2 thru_hole circle (at 3.81 -2.54) (size 2.286 2.286) (drill 1.4986) (layers *.Cu *.Mask) (net 2 "GND"))
+          )
+        
+
+    (module "RPi_Pico_TH_oval_face_down"
+    (layer "F.Cu")
+    (attr through_hole)
+    (at 190.4 108.585 0)
+    (fp_text reference "U0" (at 0 0) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp db43bf1b-fd5c-4a08-b779-663eec4fe496)
+    )
+    (fp_text value "Pico" (at 0 2.159) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 957d80db-26db-4e86-a9dc-29ad4ca5095b)
+    )
+    (fp_text user "GP19" (at -11.43 13.335 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 0512cf0d-bf03-4f77-8a6a-c3c067802cf0)
+    )
+    (fp_text user "GP27" (at -11.43 -4.445 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 05a8de54-ae76-40c7-a32a-0df7a4d563d2)
+    )
+    (fp_text user "GP1" (at 11.43 -20.965 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 0b801e05-2e0a-4351-85c5-ec4a1d9b9fad)
+    )
+    (fp_text user "GP12" (at 11.43 14.605 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 0bd23f7d-3ca1-42f0-9a3d-95ab3fd6f1e6)
+    )
+    (fp_text user "GP9" (at 11.43 4.445 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 136c183c-b28d-4915-9b5e-d3fbba117f5d)
+    )
+    (fp_text user "GP15" (at 11.43 24.765 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 1ca49d57-c61e-4e6f-b2b4-6469a5bf07fd)
+    )
+    (fp_text user "AGND" (at -11.43 -6.985 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 1cd27a2f-710a-404b-b237-1824446b721d)
+    )
+    (fp_text user "ADC_VREF" (at -11.43 -12.065 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 1f6c33fd-53d6-4b46-8c44-6e86103c343b)
+    )
+    (fp_text user "GP22" (at -11.43 3.175 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 28bc7544-de38-440b-bcb9-9c5464212a88)
+    )
+    (fp_text user "VBUS" (at -11.43 -24.765 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 2b4c337c-e381-425c-a127-71eef88ed016)
+    )
+    (fp_text user "GP6" (at 11.43 -3.175 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 2f817fcf-0536-4fec-b4a4-0b995265cae3)
+    )
+    (fp_text user "GP28" (at -11.43 -9.525 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 3e68e217-93bc-4a8f-b53b-b4ce7571bba3)
+    )
+    (fp_text user "GND" (at 11.43 -5.715 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 3ee5e203-0a5e-4ba6-b209-3de0a6dc94f1)
+    )
+    (fp_text user "GND" (at 11.43 6.985 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 486edd86-fcbc-4903-9a5a-a56a63dd1f1a)
+    )
+    (fp_text user "GP11" (at 11.43 12.065 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 55ac62f1-4c43-4ca0-98ee-1f9a2235b670)
+    )
+    (fp_text user "GP2" (at 11.43 -15.875 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 5e7824a9-0072-4fb4-a97e-86401588ad3a)
+    )
+    (fp_text user "GND" (at 11.43 -18.415 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 617a295b-33e8-4933-aea0-2422d1059ab0)
+    )
+    (fp_text user "GP18" (at -11.43 15.875 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 6b317f00-b4e3-4395-a2e9-d4cc2399e67d)
+    )
+    (fp_text user "GP5" (at 11.43 -8.255 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 6d2304ff-7a57-4d14-a62e-731c4a6eaab1)
+    )
+    (fp_text user "GND" (at -11.43 5.715 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 6d3f8560-f792-46f2-8d92-a99a59b2b7ec)
+    )
+    (fp_text user "GND" (at -11.43 -19.685 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 734ffb13-1205-478b-85b2-a083728372bf)
+    )
+    (fp_text user "GP7" (at 11.43 -0.635 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 7c9ba3d6-95c3-4c2c-9ead-6739b490045e)
+    )
+    (fp_text user "3V3" (at -11.43 -14.605 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 7f091456-4b73-4380-b574-778d43125dd0)
+    )
+    (fp_text user "GP21" (at -11.43 8.255 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 808a9ecb-2b94-4ebe-9579-7c8e28d7c5cb)
+    )
+    (fp_text user "GP10" (at 11.43 9.525 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 8860f633-76e6-48a4-acbe-09aac3a44bcf)
+    )
+    (fp_text user "GP20" (at -11.43 10.795 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 892fffcc-863d-457e-9517-0e1fc19a968b)
+    )
+    (fp_text user "GP14" (at 11.43 22.225 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 8ede2f8b-7c13-4dd0-848b-6cc5bb6bce91)
+    )
+    (fp_text user "GP26" (at -11.43 -1.905 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 93f2d0f4-f915-4870-9631-0a126f1c8722)
+    )
+    (fp_text user "GND" (at 11.43 19.685 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp 98901507-a30f-46c5-82a1-b63397592c35)
+    )
+    (fp_text user "GND" (at -11.48 18.415 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp 9906893d-5ce6-41be-b28d-674dda74fcf2)
+    )
+    (fp_text user "GP3" (at 11.43 -13.335 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp a2a1bf4c-34eb-4313-bdff-023937f75c46)
+    )
+    (fp_text user "RUN" (at -11.43 0.635 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp bd0acae4-a9b4-47df-b2ac-e56f0915c546)
+    )
+    (fp_text user "3V3_EN" (at -11.43 -17.145 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp bdd5cabe-db62-41b8-aef0-e212997e6908)
+    )
+    (fp_text user "GP13" (at 11.43 17.145 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp bf829bfc-ee97-4500-b663-1ffc0c014b58)
+    )
+    (fp_text user "GP4" (at 11.43 -10.795 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp c2cd2136-b152-4c8d-8289-a7f02960a202)
+    )
+    (fp_text user "GP17" (at -11.43 20.955 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp c4f0935d-2e39-4377-acd5-ce40dcae6269)
+    )
+    (fp_text user "GP16" (at -11.43 23.495 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp e5d85871-9ee2-491a-bb59-a3242400eca4)
+    )
+    (fp_text user "GP8" (at 11.43 1.905 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp f4af7cac-0297-411b-a037-c4c7f1bd858f)
+    )
+    (fp_text user "VSYS" (at -11.43 -22.225 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right))
+      (tstamp f8d1576f-fc85-4227-a9f4-84cf671342d4)
+    )
+    (fp_text user "GP0" (at 11.43 -23.495 45) (layer "F.Fab")
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left))
+      (tstamp f92f5543-6884-43ca-a733-80d8e8fb1514)
+    )
+    (fp_line (start -10.5 25.5) (end 10.5 25.5) (layer "F.SilkS") (width 0.12) (tstamp 0ee7d488-c8e1-4c44-86f9-cb3179c1dcc3))
+    (fp_line (start -10.5 -25.5) (end -10.5 25.5) (layer "F.SilkS") (width 0.12) (tstamp 534bc5c9-f3fb-4616-80c7-bc456d144644))
+    (fp_line (start -10.5 -25.5) (end 10.5 -25.5) (layer "F.SilkS") (width 0.12) (tstamp 68482ec9-0f6b-4f20-939f-192de417ebc3))
+    (fp_line (start 10.5 -25.5) (end 10.5 25.5) (layer "F.SilkS") (width 0.12) (tstamp 81447e22-84f7-41be-abbd-faa8158a1a92))
+    (fp_circle (center 11.43 -24.13) (end 12.065 -24.13) (layer "F.SilkS") (width 0) (fill solid) (tstamp 6850ce9f-d644-475c-8473-9f77a98004b5))
+    (fp_line (start 11 -26) (end -11 -26) (layer "F.CrtYd") (width 0.12) (tstamp 2f9ae238-1fb9-4e15-8fa1-677f80c040a6))
+    (fp_line (start -11 -26) (end -11 26) (layer "F.CrtYd") (width 0.12) (tstamp 699ff8d4-2c0e-4217-95dd-298b70b89404))
+    (fp_line (start -11 26) (end 11 26) (layer "F.CrtYd") (width 0.12) (tstamp 72b8bd2c-7322-4211-94c6-b8b57c1ae45f))
+    (fp_line (start 11 26) (end 11 -26) (layer "F.CrtYd") (width 0.12) (tstamp 81d02e3f-8a4a-4f4a-8c87-a49e720a351f))
+    (fp_line (start -10.5 -25.5) (end -10.5 25.5) (layer "F.Fab") (width 0.12) (tstamp 2b9714fd-9cdd-4b0a-940e-6a9561081b60))
+    (fp_line (start 10.5 25.5) (end 10.5 -25.5) (layer "F.Fab") (width 0.12) (tstamp 66e308bb-0f20-48b1-96bd-7e938eb86aff))
+    (fp_line (start 10.5 -24.2) (end 9.2 -25.5) (layer "F.Fab") (width 0.12) (tstamp 80bc0467-dc46-4791-9307-44241d7966d4))
+    (fp_line (start 10.5 -25.5) (end -10.5 -25.5) (layer "F.Fab") (width 0.12) (tstamp d2cf8733-14a9-4c23-b276-1bc10c1a5f51))
+    (fp_line (start -10.5 25.5) (end 10.5 25.5) (layer "F.Fab") (width 0.12) (tstamp e840b107-3750-438e-b78f-29c9d0d23fc4))
+    (pad "1" thru_hole oval (at 8.82 -24.13) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 261789c0-418e-4ec0-8cdf-89abe1f96c5d) (net 26 "GP0"))
+    (pad "2" thru_hole oval (at 8.82 -21.59) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 82df91bd-b1f7-4cb5-a4b8-f014077ed225) (net 27 "GP1"))
+    (pad "3" thru_hole rect (at 8.82 -19.05) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp e2d28f85-8433-4782-86c1-698d98ca355b) (net 2 "GND"))
+    (pad "4" thru_hole oval (at 8.82 -16.51) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 6c215906-b1c0-41e7-a1ee-f64340a0df1f) (net 28 "GP2"))
+    (pad "5" thru_hole oval (at 8.82 -13.97) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 76c55b2f-8f9b-48f6-a612-6fe3631d36eb) (net 29 "GP3"))
+    (pad "6" thru_hole oval (at 8.82 -11.43) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 210013bf-6406-44cc-a685-766765aa871b) (net 30 "GP4"))
+    (pad "7" thru_hole oval (at 8.82 -8.89) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 2a1ac614-5190-4c1d-94c5-f92822392dbd) (net 31 "GP5"))
+    (pad "8" thru_hole rect (at 8.82 -6.35) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 3aca05ca-5eaa-49fe-b403-9e2bce888982) (net 2 "GND"))
+    (pad "9" thru_hole oval (at 8.82 -3.81) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp fc3ee03b-64c4-4765-a4db-f9ccddc815c0) (net 32 "GP6"))
+    (pad "10" thru_hole oval (at 8.82 -1.27) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 1cbf2788-2f4d-4a14-987b-1ca92d4e80a5) (net 33 "GP7"))
+    (pad "11" thru_hole oval (at 8.82 1.27) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp b8d2415c-f56e-4a89-978d-a2919d2209f5) (net 34 "GP8"))
+    (pad "12" thru_hole oval (at 8.82 3.81) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 721079ce-6e9b-4142-b40e-724402815846) (net 35 "GP9"))
+    (pad "13" thru_hole rect (at 8.82 6.35) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 156789ac-0299-4e4b-9bdc-aae415420eec) (net 2 "GND"))
+    (pad "14" thru_hole oval (at 8.82 8.89) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp fda6fba3-26de-4533-ab37-f87bb8ca8965) (net 36 "GP10"))
+    (pad "15" thru_hole oval (at 8.82 11.43) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp db248dbe-bef4-43e0-991f-f8907ae081d4) (net 37 "GP11"))
+    (pad "16" thru_hole oval (at 8.82 13.97) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 8b5154dc-4718-4a03-ad67-ed035a4319ce) (net 38 "GP12"))
+    (pad "17" thru_hole oval (at 8.82 16.51) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp eb64b7d2-d623-452c-9703-2bb0265ee337) (net 39 "GP13"))
+    (pad "18" thru_hole rect (at 8.82 19.05) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp f7386878-6bd2-49fb-be47-6588e913174b) (net 2 "GND"))
+    (pad "19" thru_hole oval (at 8.82 21.59) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp fa8076fb-ecc2-4918-a4f3-511178e9ad37) (net 40 "GP14"))
+    (pad "20" thru_hole oval (at 8.82 24.13) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 4b6b7c47-5e11-4065-b26e-9c14c9c8ee50) (net 41 "GP15"))
+    (pad "21" thru_hole oval (at -8.82 24.13) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 7a45c78c-faae-432b-8399-806250e23db7) (net 42 "GP16"))
+    (pad "22" thru_hole oval (at -8.82 21.59) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 852f4f24-f0ec-4812-8953-10a1c9ba8b18) (net 43 "GP17"))
+    (pad "23" thru_hole rect (at -8.82 19.05) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 6fbe5d8d-e43a-4207-a531-c4dfe41759ce) (net 2 "GND"))
+    (pad "24" thru_hole oval (at -8.82 16.51) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 48f29450-601c-4f43-bede-558f16a2580a) (net 44 "GP18"))
+    (pad "25" thru_hole oval (at -8.82 13.97) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 0cf035fe-7441-41a9-8ecd-8633f9511a86) (net 45 "GP19"))
+    (pad "26" thru_hole oval (at -8.82 11.43) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 4aa34793-001c-422a-9a9e-f2fa24b7c918) (net 46 "GP20"))
+    (pad "27" thru_hole oval (at -8.82 8.89) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 07bfbc8a-823e-44b5-ab95-5c0659fd56bb) (net 47 "GP21"))
+    (pad "28" thru_hole rect (at -8.82 6.35) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 6fd23c62-f256-47b1-9fb2-80a0473029fb) (net 2 "GND"))
+    (pad "29" thru_hole oval (at -8.82 3.81) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 0e54c542-e3a2-4db6-883d-37a3ad94739d) (net 48 "GP22"))
+    (pad "30" thru_hole oval (at -8.82 1.27) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 49dcd950-fbab-4ac5-9a36-86d2c2a0259e) (net 49 "RUN"))
+    (pad "31" thru_hole oval (at -8.82 -1.27) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 84cce8d0-f83b-4f08-af4b-1d62af837a54) (net 50 "GP26"))
+    (pad "32" thru_hole oval (at -8.82 -3.81) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp da79c04c-a207-48dc-a5d7-8a078322a160) (net 51 "GP27"))
+    (pad "33" thru_hole rect (at -8.82 -6.35) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 9db6e273-f7b0-4ab9-9b75-cb2195ede133) (net 52 "AGND"))
+    (pad "34" thru_hole oval (at -8.82 -8.89) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 36be125c-d820-40b1-81f5-37cb6c4c1027) (net 53 "GP28"))
+    (pad "35" thru_hole oval (at -8.82 -11.43) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 510cc5c4-e61c-4e17-93d1-bd10b62ad6fb) (net 54 "ADC_VREF"))
+    (pad "36" thru_hole oval (at -8.82 -13.97) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 33256a6e-b053-471b-ac8e-081487946d0e) (net 55 "3V3"))
+    (pad "37" thru_hole oval (at -8.82 -16.51) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp ac928fb2-0ce9-4e34-8e2d-402b47a0d641) (net 56 "3V3_EN"))
+    (pad "38" thru_hole rect (at -8.82 -19.05) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp cb792c93-111c-4188-a8ba-8930e71f97d8) (net 2 "GND"))
+    (pad "39" thru_hole oval (at -8.82 -21.59) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp b8260a4c-72c5-48e1-9736-d2140182d3fc) (net 57 "VSYS"))
+    (pad "40" thru_hole oval (at -8.82 -24.13) (size 1.84 1.7) (drill oval 1.16 1.02) (layers *.Cu *.Mask) (tstamp 1a60f562-a956-4d54-a00f-6201c5b12308) (net 58 "VBUS"))
+    )
+    
+
+          
+      (module TRRS-PJ-320A-dual (layer F.Cu) (tedit 5970F8E5)
+
+      (at 239.025 81.91499999999999 0)   
+
+      
+      (fp_text reference "TRRS1" (at 0 14.2) (layer Dwgs.User) (effects (font (size 1 1) (thickness 0.15))))
+      (fp_text value TRRS-PJ-320A-dual (at 0 -5.6) (layer F.Fab) (effects (font (size 1 1) (thickness 0.15))))
+
+      
+      (fp_line (start 0.5 -2) (end -5.1 -2) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -5.1 0) (end -5.1 -2) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 0.5 0) (end 0.5 -2) (layer Dwgs.User) (width 0.15))
+      (fp_line (start -5.35 0) (end -5.35 12.1) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 0.75 0) (end 0.75 12.1) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 0.75 12.1) (end -5.35 12.1) (layer Dwgs.User) (width 0.15))
+      (fp_line (start 0.75 0) (end -5.35 0) (layer Dwgs.User) (width 0.15))
+
+      
+          
+        (pad "" np_thru_hole circle (at -2.3 8.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
+        (pad "" np_thru_hole circle (at -2.3 1.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
+      
+          
+        (pad "" np_thru_hole circle (at 0 8.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
+        (pad "" np_thru_hole circle (at 0 1.6) (size 1.5 1.5) (drill 1.5) (layers *.Cu *.Mask))
+      
+          
+        (pad 1 thru_hole oval (at -2.3 11.3 0) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 55 "3V3"))
+        (pad 2 thru_hole oval (at 2.3 10.2 0) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 2 "GND"))
+        (pad 3 thru_hole oval (at 2.3 6.2 0) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 26 "GP0"))
+        (pad 4 thru_hole oval (at 2.3 3.2 0) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 27 "GP1"))
+      
+          
+        (pad 1 thru_hole oval (at 0 11.3 0) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 55 "3V3"))
+        (pad 2 thru_hole oval (at -4.6 10.2 0) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 2 "GND"))
+        (pad 3 thru_hole oval (at -4.6 6.2 0) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 27 "GP1"))
+        (pad 4 thru_hole oval (at -4.6 3.2 0) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 26 "GP0"))
+      )
+        
+
+            (gr_text "JLCJLCJLCJLC" (at 228.4 123.825 0) (layer F.SilkS)
+                (effects (font (size 1 1) (thickness 0.15)) )
+            )
+        
+
+            (gr_text "risha v0.0.1" (at 228.4 142.875 0) (layer F.SilkS)
+                (effects (font (size 1 1) (thickness 0.15)) )
+            )
+        
+(module DrillHole (layer "F.Cu") (tedit 5F880A3E)
+    (at 161.925 104.77499999999999 0)
+  (pad "" thru_hole circle (at 0 0) (size 4.5 4.5) (drill 4) (layers *.Cu *.Mask) (tstamp 41c9d83b-325c-4159-a170-61d8654be338))
+)
+
+(module DrillHole (layer "F.Cu") (tedit 5F880A3E)
+    (at 237.875 104.77499999999999 0)
+  (pad "" thru_hole circle (at 0 0) (size 4.5 4.5) (drill 4) (layers *.Cu *.Mask) (tstamp 41c9d83b-325c-4159-a170-61d8654be338))
+)
+
+(module DrillHole (layer "F.Cu") (tedit 5F880A3E)
+    (at 237.875 142.875 0)
+  (pad "" thru_hole circle (at 0 0) (size 4.5 4.5) (drill 4) (layers *.Cu *.Mask) (tstamp 41c9d83b-325c-4159-a170-61d8654be338))
+)
+
+(module DrillHole (layer "F.Cu") (tedit 5F880A3E)
+    (at 161.925 142.875 0)
+  (pad "" thru_hole circle (at 0 0) (size 4.5 4.5) (drill 4) (layers *.Cu *.Mask) (tstamp 41c9d83b-325c-4159-a170-61d8654be338))
+)
+
+            (gr_line (start 142.875 158.925) (end 142.875 88.725) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 145.875 85.725) (end 174.6125 85.725) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 177.0125 84.525) (end 178.07 83.11499999999998) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 180.47 81.91499999999999) (end 200.33000000000004 81.91499999999999) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 202.73000000000002 83.11500000000004) (end 203.7875 84.525) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 206.1875 85.725) (end 228.805 85.725) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 231.205 84.52500000000003) (end 232.2625 83.11500000000007) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 234.6625 81.91499999999999) (end 241.1375 81.91499999999999) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 243.5375 83.11499999999998) (end 244.59499999999997 84.52499999999995) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 246.99499999999995 85.725) (end 253.925 85.725) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 256.925 88.725) (end 256.925 158.925) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 253.925 161.925) (end 145.875 161.925) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 145.875 88.725) (end 145.875 85.725) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 174.6125 82.725) (end 174.6125 85.725) (angle -53.130102354155554) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 180.47 84.91499999999996) (end 180.47 81.91499999999996) (angle -53.13010235415629) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 200.33000000000004 84.91499999999999) (end 202.73000000000005 83.115) (angle -53.13010235415642) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 206.1875 82.72500000000002) (end 203.7875 84.52500000000002) (angle -53.13010235415629) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 228.805 82.725) (end 228.805 85.725) (angle -53.13010235415544) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 234.6625 84.91500000000002) (end 234.6625 81.91500000000002) (angle -53.13010235415675) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 241.1375 84.91499999999999) (end 243.5375 83.115) (angle -53.13010235415588) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 246.99499999999995 82.72499999999997) (end 244.59499999999994 84.52499999999996) (angle -53.13010235415598) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 253.925 88.725) (end 256.925 88.725) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 253.925 158.925) (end 253.925 161.925) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 145.875 158.925) (end 142.875 158.925) (angle -90) (layer Edge.Cuts) (width 0.15))
+            
+)
+
+        
