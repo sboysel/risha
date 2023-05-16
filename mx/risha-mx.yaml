@@ -23,7 +23,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_index_bottom
-        shift: [px, -2ky]
+        shift: [px, -1.5ky]
       columns:
         near:
         far:
@@ -49,8 +49,8 @@ outlines:
         - ref: matrix_inner_top
           shift: [0.5kx, 0.5ky]
         # SE
-        - ref: matrix_inner_bottom
-          shift: [px + 0.5kx, -0.65ky]
+        - ref: thumbfan_far_home
+          shift: [0.5kx, 1ky]
         - ref: thumbfan_far_home
           shift: [0.5kx, -0.5ky]
         - ref: thumbfan_near_home
@@ -104,7 +104,7 @@ pcbs:
         what: trrs
         where:
           ref: matrix_inner_bottom
-          shift: [1.05kx, -1ky]
+          shift: [0.75kx, -0.8ky]
           rotate: 270
         params:
           A: 3V3  # ring
