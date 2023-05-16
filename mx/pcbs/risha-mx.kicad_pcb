@@ -968,6 +968,16 @@
         (pad 4 thru_hole oval (at -4.6 3.2 270) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 19 "GP8"))
       )
         
+
+            (gr_text "JLCJLCJLCJLC" (at 228.60000000000002 123.825 0) (layer F.SilkS)
+                (effects (font (size 1 1) (thickness 0.15)) )
+            )
+        
+
+            (gr_text "risha v0.2.0" (at 228.60000000000002 142.875 0) (layer F.SilkS)
+                (effects (font (size 1 1) (thickness 0.15)) )
+            )
+        
             (gr_line (start 142.875 182.9594839973703) (end 142.875 107.77499999999999) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 145.875 104.77499999999999) (end 235.36351806430451 104.77499999999999) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 238.35325257322495 107.52703260755379) (end 242.85473450892053 161.80122936388307) (angle 90) (layer Edge.Cuts) (width 0.15))

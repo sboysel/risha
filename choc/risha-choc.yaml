@@ -114,20 +114,20 @@ pcbs:
           reverse: true
           symmetric: false
           cross: true
-      # jlc_text:
-      #   what: text 
-      #   where:
-      #     ref: matrix_index_home
-      #     shift: [0, -0.5ky]
-      #   params:
-      #     text: 'JLCJLCJLCJLC'
-      # version_text:
-      #   what: text 
-      #   where:
-      #     ref: matrix_index_bottom
-      #     shift: [0, -0.5ky]
-      #   params:
-      #     text: 'risha v0.0.1'
+      jlc_text:
+        what: text 
+        where:
+          ref: matrix_inner_top
+          shift: [0, -0.5ky]
+        params:
+          text: 'JLCJLCJLCJLC'
+      version_text:
+        what: text 
+        where:
+          ref: matrix_inner_home
+          shift: [0, -0.5ky]
+        params:
+          text: 'risha v0.2.0'
       # m2_nw:
       #   what: m2 
       #   where:
