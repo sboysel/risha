@@ -1,11 +1,12 @@
 {
-    "name": "mosaic",
-    "version": "0.0.1",
+    "name": "risha",
+    "version": "0.2.0",
     "dependencies": {
         "@jscad/modeling": "2.11.0",
         "ergogen": "github:sboysel/ergogen#develop"
     },
     "scripts": {
-        "gen": "ergogen mosaic.yaml"
+        "choc": "ergogen --output choc choc/risha-choc.yaml",
+        "mx": "ergogen --output mx mx/risha-mx.yaml"
     }
 }
