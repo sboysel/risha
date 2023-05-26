@@ -1,11 +1,12 @@
 {
-    "name": "risha",
+    "name": "lets-pico",
     "version": "0.0.1",
     "dependencies": {
         "@jscad/modeling": "2.11.0",
+        "@jscad/cli": "2.2.26",
         "ergogen": "github:sboysel/ergogen#develop"
     },
     "scripts": {
-        "gen": "ergogen risha.yaml"
+        "mx": "ergogen --output mx mx/lets_pico_mx.yaml"
     }
 }

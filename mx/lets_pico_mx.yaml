@@ -1,0 +1,143 @@
+units:
+  kx: U
+  ky: U
+  px: 100 - 5U 
+  py: 0.25ky     # vertical distance for MCU and TRRS popouts
+  mh_diam: 4    # mounting hole diameter
+  mh_pad: 0.5   # mounting hole copper pad width
+
+points:
+  zones:
+    matrix:
+      anchor:
+        shift: [8kx, -8ky]
+      columns:
+        pinky:
+        ring:
+        middle:
+        index:
+        inner:
+      rows:
+        bottom:
+        home:
+        top:
+    thumbfan:
+      anchor:
+        ref: matrix_index_bottom
+        shift: [px, -1.5ky]
+      columns:
+        near:
+        far:
+      rows:
+        home:
+  key:
+    padding: 1ky
+    spread: 1kx
+
+outlines:
+  _switches:
+    - what: rectangle
+      where: true
+      size: 14
+      bound: false
+  lets_pico_mx_pcb:
+    - what: polygon
+      points:
+        # NW
+        - ref: matrix_pinky_top
+          shift: [-0.5kx, 0.5ky + py]
+        # NE
+        - ref: matrix_inner_top
+          shift: [0.5kx + px, 0.5ky + py]
+        # SE
+        - ref: thumbfan_far_home
+          shift: [0.5kx, -0.5ky]
+        # SW
+        - ref: thumbfan_near_home
+          shift: [-3kx - 0.5kx - px, -0.5ky]
+      fillet: 3
+  lets_pico_mx_bottom_plate:
+    - what: polygon
+      points:
+        # NW
+        - ref: matrix_pinky_top
+          shift: [-0.5kx - 3, 0.5ky + py + 3]
+        # NE
+        - ref: matrix_inner_top
+          shift: [0.5kx + px + 3, 0.5ky + py + 3]
+        # SE
+        - ref: thumbfan_far_home
+          shift: [0.5kx + 3, -0.5ky - 3]
+        # SW
+        - ref: thumbfan_near_home
+          shift: [-3kx - 0.5kx - px - 3, -0.5ky - 3]
+      fillet: 3
+  lets_pico_mx_switch_plate:
+    - lets_pico_mx_pcb
+    - -_switches
+  lets_pico_mx_top_plate: # wider
+    - lets_pico_mx_bottom_plate
+    - -_switches
+
+pcbs:
+  lets_pico_mx:
+    outlines:
+      main:
+        outline: lets_pico_mx_pcb
+        footprints:
+    footprints:
+      mx:
+        what: mx
+        where: true
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: false 
+          from: "{{name}}"
+          to: GND
+        adjust:
+          rotate: 180
+      pico:
+        what: weact_pi_pico
+        where:
+          ref: matrix_middle_home
+          shift: [0, 0.4ky]
+          rotate: 0
+        params:
+          orientation: "down"
+      trrs:
+        what: trrs
+        where:
+          ref: matrix_index_top
+          shift: [0.56kx, 0.75ky]
+          rotate: 0
+        params:
+          A: VSYS   # ring
+          B: GND    # ring
+          C: GP0    # TX
+          D: GP1    # RX
+          reverse: true
+          symmetric: false
+          cross: true
+      jlc_text:
+        what: text 
+        where:
+          ref: matrix_pinky_home
+          shift: [0, 0.5ky]
+        params:
+          text: 'JLCJLCJLCJLC'
+      version_text:
+        what: text 
+        where:
+          ref: matrix_pinky_bottom
+          shift: [0, 0.5ky]
+        params:
+          text: "let's pico v0.0.1"
+
+cases:
+  lets_pico:
+    - name: lets_pico_mx_top_plate
+      extrude: 8
+    - name: lets_pico_mx_top_plate
+      extrude: 6
+      operation: subtract
