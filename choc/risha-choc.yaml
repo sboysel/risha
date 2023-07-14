@@ -23,7 +23,7 @@ points:
     thumbfan:
       anchor:
         ref: matrix_index_bottom
-        shift: [px, -1.6ky]
+        shift: [px, -1.75ky]
       columns:
         near:
         far:
@@ -73,7 +73,7 @@ pcbs:
         params:
           keycaps: true
           reverse: true
-          hotswap: false
+          hotswap: true
           from: "{{name}}"
           to: GND 
       rp2040_zero:
@@ -103,9 +103,8 @@ pcbs:
       trrs:
         what: trrs
         where:
-          ref: matrix_inner_bottom
-          shift: [1.05kx, -0.85ky]
-          rotate: 270
+          ref: thumbfan_far_home
+          shift: [0.3kx, 1.3ky]
         params:
           A: 3V3  # ring
           B: GND  # ring
@@ -127,7 +126,7 @@ pcbs:
           ref: matrix_inner_home
           shift: [0, -0.5ky]
         params:
-          text: 'risha v0.2.0'
+          text: 'risha v1.0.0'
       # m2_nw:
       #   what: m2 
       #   where:

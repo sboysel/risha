@@ -283,6 +283,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "thumbfan_middle_home"
+      },
+      {
+        "netclass": "Default",
         "pattern": "thumbfan_far_home"
       },
       {
@@ -292,10 +296,6 @@
       {
         "netclass": "Default",
         "pattern": "GP9"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "GP29"
       },
       {
         "netclass": "Default",
@@ -311,7 +311,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
