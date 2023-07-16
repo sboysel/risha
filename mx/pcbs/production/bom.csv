@@ -1,0 +1,5 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+,rp2040_zero_tht_pads,1,,
+"S1, S10, S11, S12, S13, S14, S15, S16, S17, S18, S2, S3, S4, S5, S6, S7, S8, S9",MX,18,,
+TRRS1,TRRS-PJ-320A-dual,1,TRRS-PJ-320A-dual,
+"_4, _5, _6",MountingHole_2.2mm_M2_Pad_Via,3,,
