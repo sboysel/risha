@@ -1,7 +1,7 @@
 units:
   kx: U
   ky: U
-  px: 7.5 # 0.5kx
+  px: 7.5
   py: 0.5ky
   px_thumbfan: 100 - 5kx + 2(0.5kx - px) - 0.001
 
@@ -66,8 +66,8 @@ outlines:
           shift: [-px, -py]
         # SW
         - ref: matrix_pinky_bottom
-          shift: [-px, -py - 1.25ky]
-      fillet: 1
+          shift: [-px, -py - 1.15ky]
+      fillet: 3
     - -mcu-cutout
 
 pcbs:
@@ -86,6 +86,8 @@ pcbs:
           hotswap: false
           from: "{{name}}"
           to: GND 
+        adjust:
+          rotate: 180
       rp2040_zero:
         what: rp2040_zero_tht_pads
         where:
@@ -93,21 +95,21 @@ pcbs:
           shift: [4, -1ky]
           rotate: 90
         params:
-          GP0: matrix_pinky_top
+          GP0: matrix_pinky_bottom
           GP1: matrix_pinky_home
-          GP2: matrix_pinky_bottom
-          GP3: matrix_ring_bottom
+          GP2: matrix_pinky_top
+          GP3: matrix_ring_top
           GP4: matrix_ring_home
-          GP5: matrix_ring_top
+          GP5: matrix_ring_bottom
           GP6: matrix_middle_top
           GP7: matrix_middle_home
           GP8: matrix_middle_bottom
           GP9: matrix_index_top
           GP10: matrix_index_home
           GP11: matrix_index_bottom
-          GP13: matrix_inner_bottom
+          GP13: matrix_inner_top
           GP14: matrix_inner_home
-          GP15: matrix_inner_top
+          GP15: matrix_inner_bottom
           GP26: thumbfan_near_home
           GP27: thumbfan_middle_home
           GP28: thumbfan_far_home
