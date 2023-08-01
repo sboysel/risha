@@ -2,8 +2,6 @@ units:
   kx: cx
   ky: cy
   px: 100 - 5kx - 0.01
-  mh_diam: 4    # mounting hole diameter
-  mh_pad: 0.5   # mounting hole copper pad width
 
 points:
   zones:
@@ -22,10 +20,11 @@ points:
         top:
     thumbfan:
       anchor:
-        ref: matrix_index_bottom
+        ref: matrix_middle_bottom
         shift: [px, -1.75ky]
       columns:
         near:
+        middle:
         far:
       rows:
         home:
@@ -47,10 +46,10 @@ outlines:
           shift: [-0.5kx, 0.5ky]
         # NE
         - ref: matrix_inner_top
-          shift: [0.5kx, 0.5ky]
+          shift: [0.5kx + px - 3, 0.5ky]
         # SE
-        - ref: matrix_inner_bottom
-          shift: [px + 0.5kx, -0.5ky]
+        - ref: thumbfan_far_home
+          shift: [0.5kx, 0.75ky]
         - ref: thumbfan_far_home
           shift: [0.5kx, -0.5ky]
         - ref: thumbfan_near_home
@@ -73,7 +72,7 @@ pcbs:
         params:
           keycaps: true
           reverse: true
-          hotswap: true
+          hotswap: false
           from: "{{name}}"
           to: GND 
       rp2040_zero:
@@ -91,72 +90,56 @@ pcbs:
           GP5: matrix_ring_top
           GP6: matrix_middle_top
           GP7: matrix_middle_home
-          GP10: matrix_middle_bottom
+          GP8: matrix_middle_bottom
+          GP9: matrix_index_bottom
+          GP10: matrix_index_home
           GP11: matrix_index_top
-          GP12: matrix_index_home
-          GP13: matrix_index_bottom
-          GP14: matrix_inner_bottom
-          GP15: matrix_inner_home
-          GP26: matrix_inner_top
-          GP27: thumbfan_near_home
+          GP13: matrix_inner_top
+          GP14: matrix_inner_home
+          GP15: matrix_inner_bottom
+          GP26: thumbfan_near_home
+          GP27: thumbfan_home_home
           GP28: thumbfan_far_home
       trrs:
         what: trrs
         where:
-          ref: thumbfan_far_home
-          shift: [0.3kx, 1.3ky]
+          ref: matrix_inner_top
+          shift: [0.825kx, 0.5ky]
         params:
-          A: 3V3  # ring
-          B: GND  # ring
-          C: GP8   # TX
-          D: GP9   # RX
+          A: GND    # ring
+          B: GND    # ring
+          C: VSYS   # power
+          D: GP16   # UART0 TX
           reverse: true
-          symmetric: false
-          cross: true
+          symmetric: true
+          cross: false
+          stabilizers: false
       jlc_text:
         what: text 
         where:
-          ref: matrix_inner_top
+          ref: matrix_middle_top
           shift: [0, -0.5ky]
         params:
           text: 'JLCJLCJLCJLC'
       version_text:
         what: text 
         where:
-          ref: matrix_inner_home
+          ref: matrix_middle_home
           shift: [0, -0.5ky]
         params:
           text: 'risha v1.0.0'
-      # m2_nw:
-      #   what: m2 
-      #   where:
-      #     ref: matrix_outer_home
-      #     shift: [0.5kx, 0.5ky]
-      #   params:
-      #     drill: mh_diam 
-      #     pad: mh_diam + mh_pad
-      # m2_ne:
-      #   what: m2 
-      #   where:
-      #     ref: matrix_inner_home
-      #     shift: [-0.5kx, 0.5ky]
-      #   params:
-      #     drill: mh_diam 
-      #     pad: mh_diam + mh_pad
-      # m2_se:
-      #   what: m2 
-      #   where:
-      #     ref: matrix_inner_mod
-      #     shift: [-0.5kx, 0.5ky]
-      #   params:
-      #     drill: mh_diam 
-      #     pad: mh_diam + mh_pad
-      # m2_sw:
-      #   what: m2 
-      #   where:
-      #     ref: matrix_outer_mod
-      #     shift: [0.5kx, 0.5ky]
-      #   params:
-      #     drill: mh_diam 
-      #     pad: mh_diam + mh_pad
-
+      m2_a:
+        what: mountinghole 
+        where:
+          ref: matrix_pinky_bottom
+          shift: [0.5kx, 0.5ky]
+      m2_b:
+        what: mountinghole 
+        where:
+          ref: matrix_inner_home
+          shift: [-0.5kx, 0.5ky]
+      m2_c:
+        what: mountinghole 
+        where:
+          ref: thumbfan_middle_home
+          shift: [0.5kx, 0.5ky]
