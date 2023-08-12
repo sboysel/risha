@@ -1,12 +1,11 @@
 {
     "name": "risha",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "dependencies": {
-        "@jscad/modeling": "2.11.0",
+        "@jscad/modeling": "2.12.0",
         "ergogen": "github:sboysel/ergogen#develop"
     },
     "scripts": {
-        "choc": "ergogen --output choc choc/risha-choc.yaml",
-        "mx": "ergogen --output mx mx/risha-mx.yaml"
+        "gen": "ergogen --output ergogen risha.yaml"
     }
 }
