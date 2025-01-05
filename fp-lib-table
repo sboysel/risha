@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "risha")(type "KiCad")(uri "${KIPRJMOD}/lib/risha.pretty")(options "")(descr ""))
+)

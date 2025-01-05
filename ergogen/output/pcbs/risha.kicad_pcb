@@ -1,0 +1,345 @@
+
+
+(kicad_pcb (version 20171130) (host pcbnew 5.1.6)
+
+  (page A4)
+  (title_block
+    (title "risha")
+    (rev "v1.0.0")
+    (company "Unknown")
+  )
+
+  (general
+    (thickness 1.6)
+  )
+
+  (layers
+    (0 F.Cu signal)
+    (31 B.Cu signal)
+    (32 B.Adhes user)
+    (33 F.Adhes user)
+    (34 B.Paste user)
+    (35 F.Paste user)
+    (36 B.SilkS user)
+    (37 F.SilkS user)
+    (38 B.Mask user)
+    (39 F.Mask user)
+    (40 Dwgs.User user)
+    (41 Cmts.User user)
+    (42 Eco1.User user)
+    (43 Eco2.User user)
+    (44 Edge.Cuts user)
+    (45 Margin user)
+    (46 B.CrtYd user)
+    (47 F.CrtYd user)
+    (48 B.Fab user)
+    (49 F.Fab user)
+  )
+
+  (setup
+    (last_trace_width 0.25)
+    (trace_clearance 0.2)
+    (zone_clearance 0.508)
+    (zone_45_only no)
+    (trace_min 0.2)
+    (via_size 0.8)
+    (via_drill 0.4)
+    (via_min_size 0.4)
+    (via_min_drill 0.3)
+    (uvia_size 0.3)
+    (uvia_drill 0.1)
+    (uvias_allowed no)
+    (uvia_min_size 0.2)
+    (uvia_min_drill 0.1)
+    (edge_width 0.05)
+    (segment_width 0.2)
+    (pcb_text_width 0.3)
+    (pcb_text_size 1.5 1.5)
+    (mod_edge_width 0.12)
+    (mod_text_size 1 1)
+    (mod_text_width 0.15)
+    (pad_size 1.524 1.524)
+    (pad_drill 0.762)
+    (pad_to_mask_clearance 0.05)
+    (aux_axis_origin 0 0)
+    (visible_elements FFFFFF7F)
+    (pcbplotparams
+      (layerselection 0x010fc_ffffffff)
+      (usegerberextensions false)
+      (usegerberattributes true)
+      (usegerberadvancedattributes true)
+      (creategerberjobfile true)
+      (excludeedgelayer true)
+      (linewidth 0.100000)
+      (plotframeref false)
+      (viasonmask false)
+      (mode 1)
+      (useauxorigin false)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (psnegative false)
+      (psa4output false)
+      (plotreference true)
+      (plotvalue true)
+      (plotinvisibletext false)
+      (padsonsilk false)
+      (subtractmaskfromsilk false)
+      (outputformat 1)
+      (mirror false)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory ""))
+  )
+
+  (net 0 "")
+
+  (net_class Default "This is the default net class."
+    (clearance 0.2)
+    (trace_width 0.25)
+    (via_dia 0.8)
+    (via_drill 0.4)
+    (uvia_dia 0.3)
+    (uvia_drill 0.1)
+    (add_net "")
+  )
+
+  
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 95.25 95.25 0)
+            (fp_text reference "MX1" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 95.25 76.2 0)
+            (fp_text reference "MX2" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 95.25 57.150000000000006 0)
+            (fp_text reference "MX3" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 114.3 95.25 0)
+            (fp_text reference "MX4" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 114.3 76.2 0)
+            (fp_text reference "MX5" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 114.3 57.150000000000006 0)
+            (fp_text reference "MX6" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 133.35 95.25 0)
+            (fp_text reference "MX7" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 133.35 76.2 0)
+            (fp_text reference "MX8" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 133.35 57.150000000000006 0)
+            (fp_text reference "MX9" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 152.4 95.25 0)
+            (fp_text reference "MX10" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 152.4 76.2 0)
+            (fp_text reference "MX11" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 152.4 57.150000000000006 0)
+            (fp_text reference "MX12" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 171.45 95.25 0)
+            (fp_text reference "MX13" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 171.45 76.2 0)
+            (fp_text reference "MX14" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 171.45 57.150000000000006 0)
+            (fp_text reference "MX15" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 164.15 120.015 0)
+            (fp_text reference "MX16" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module MX_SW_solder (layer F.Cu)
+
+            (at 183.20000000000002 120.015 0)
+            (fp_text reference "MX17" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module RP2040-Matrix (layer F.Cu)
+
+            (at 99.75 116.205 90)
+            (fp_text reference "U1" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+    
+        (module PJ-320A (layer F.Cu)
+
+            (at 187.64249999999998 47.62500000000001 270)
+            (fp_text reference "J1" (at 0 0 0) (layer "F.Fab")
+              (effects (font (size 1 1) (thickness 0.15)))
+            )
+        )
+    
+        
+
+            (gr_text "JLCJLCJLCJLC" (at 123.825 66.675 0) (layer F.SilkS)
+                (effects (font (size 1 1) (thickness 0.15)) )
+            )
+        
+
+            (gr_text "risha v0.4.0" (at 123.825 85.725 0) (layer F.SilkS knockout)
+                (effects (font (size 1 1) (thickness 0.15)) )
+            )
+        
+
+            (gr_text "risha v0.4.0" (at 123.825 85.725 0) (layer B.SilkS knockout)
+                (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+            )
+        
+  (gr_line (start 88.225 127.53999999999999) (end 88.225 122.455) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 88.225 109.955) (end 88.225 49.62500000000001) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 90.225 47.62500000000001) (end 188.225 47.62500000000001) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 190.225 49.62500000000001) (end 190.225 127.53999999999999) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 188.225 129.54) (end 90.225 129.54) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 90.225 49.62500000000001) (end 90.225 47.62500000000001) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 188.225 49.62500000000001) (end 190.225 49.62500000000001) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 188.225 127.53999999999999) (end 188.225 129.54) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 90.225 127.53999999999999) (end 88.225 127.53999999999999) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 88.225 122.455) (end 108.5 122.455) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 108.5 122.455) (end 108.5 109.955) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 108.5 109.955) (end 88.225 109.955) (angle 90) (layer Edge.Cuts) (width 0.15))
+
+)
+

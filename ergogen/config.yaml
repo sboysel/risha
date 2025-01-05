@@ -1,3 +1,10 @@
+meta:
+  engine: 4.1.0
+  name: risha
+  version: 0.4.0
+  author: sboysel
+  url: https://github.com/sboysel/risha
+
 units:
   kx: U
   ky: U
@@ -15,7 +22,7 @@ points:
   zones:
     matrix:
       anchor:
-        shift: [8kx, -8ky]
+        shift: [5kx, -5ky]
       columns:
         pinky:
         ring:
@@ -28,11 +35,10 @@ points:
         top:
     thumbfan:
       anchor:
-        ref: matrix_middle_bottom
+        ref: matrix_index_bottom
         shift: [tx, -1ky - ty]
       columns:
         near:
-        middle:
         far:
       rows:
         home:
@@ -41,12 +47,6 @@ points:
     spread: 1kx
 
 outlines:
-  _mcu-cutout:
-    - what: rectangle 
-      where:
-        ref: matrix_pinky_bottom
-        shift: [0, -mcuy]
-      size: [27, 13]
   risha:
     - what: polygon
       points:
@@ -63,7 +63,14 @@ outlines:
         - ref: matrix_pinky_bottom
           shift: [-px, -py - ty - 1ky]
       fillet: 2
-    - -_mcu-cutout
+    # MCU cutout
+    - what: rectangle 
+      where:
+        ref: matrix_pinky_bottom
+        shift: [0, -mcuy]
+      size: [26.5, 12.5]
+      operation: subtract
+
 
 pcbs:
   risha:
@@ -73,53 +80,32 @@ pcbs:
         footprints:
     footprints:
       mx:
-        what: mx
+        what: placeholder
         where: true
         params:
-          keycaps: true
-          reverse: true
-          hotswap: false
-          from: "{{name}}"
-          to: GND
+          designator: MX
+          value: MX_SW_solder
+          side: F
       rp2040_zero:
-        what: rp2040_zero_tht_pads
+        what: placeholder
         where:
           ref: matrix_pinky_bottom
           shift: [mcux, -mcuy]
           rotate: 90
         params:
-          GP0: matrix_pinky_bottom
-          GP1: matrix_pinky_home
-          GP2: matrix_pinky_top
-          GP3: matrix_ring_bottom
-          GP4: matrix_ring_home
-          GP5: matrix_ring_top
-          GP6: matrix_middle_bottom
-          GP7: matrix_middle_home
-          GP8: matrix_middle_top
-          GP9: matrix_index_top
-          GP10: matrix_index_home
-          GP11: matrix_index_bottom
-          GP13: matrix_inner_bottom
-          GP14: matrix_inner_home
-          GP15: matrix_inner_top
-          GP26: thumbfan_far_home
-          GP27: thumbfan_middle_home
-          GP28: thumbfan_near_home
+          designator: U
+          value: RP2040-Matrix
+          side: F
       trrs:
-        what: trrs
+        what: placeholder
         where:
           ref: matrix_inner_top
           shift: [trrsx, trrsy]
+          rotate: 270
         params:
-          A: GND    # ring
-          B: GND    # ring
-          C: 3V3    # power
-          D: GP12   # UART0 TX
-          reverse: true
-          symmetric: true
-          cross: false
-          stabilizers: true
+          designator: J
+          value: PJ-320A
+          side: F
       jlc_text:
         what: text 
         where:
@@ -127,35 +113,22 @@ pcbs:
           shift: [0.5kx, 0.5ky]
         params:
           text: 'JLCJLCJLCJLC'
-      version_text:
+      version_text_front:
         what: text 
         where:
           ref: matrix_ring_bottom
           shift: [0.5kx, 0.5ky]
         params:
-          text: 'risha v0.3.0'
-      mh_pinky_bottom:
-        what: mountinghole 
+          text: 'risha v0.4.0'
+          side: F
+          knockout: true
+      version_text_back:
+        what: text 
         where:
-          ref: matrix_pinky_bottom
+          ref: matrix_ring_bottom
           shift: [0.5kx, 0.5ky]
-      mh_pinky_top:
-        what: mountinghole 
-        where:
-          ref: matrix_pinky_home
-          shift: [0.5kx, 0.5ky]
-      mh_index_bottom:
-        what: mountinghole 
-        where:
-          ref: matrix_index_bottom
-          shift: [0.5kx, 0.5ky]
-      mh_index_top:
-        what: mountinghole 
-        where:
-          ref: matrix_index_home
-          shift: [0.5kx, 0.5ky]
-      mh_thumbfan:
-        what: mountinghole 
-        where:
-          ref: thumbfan_middle_home
-          shift: [0.5kx, 0.5ky]
+        params:
+          text: 'risha v0.4.0'
+          side: B
+          knockout: true
+          justify: mirror

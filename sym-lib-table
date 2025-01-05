@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PJ-320A_Library")(type "Legacy")(uri "${KIPRJMOD}/lib/PJ-320A_KiCad_Library/PJ-320A_Library.lib")(options "")(descr ""))
+)

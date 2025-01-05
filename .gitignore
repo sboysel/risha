@@ -11,3 +11,5 @@ prod/fp-info-cache
 prod/production
 ergogen/pcbs/production
 ergogen/pcbs/fp-info-cache
+**/*.lck
+risha-backups
