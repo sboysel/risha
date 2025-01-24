@@ -9,14 +9,14 @@ units:
   kx: U
   ky: U
   width: 102            # board max width
-  px: 0.5kx - 2.5       # horizontal padding (main)
-  py: 0.5ky             # vertical padding (main)
-  tx: width - 5U + 5    # horizontal shift (thumbfan)
-  ty: 0.3ky             # vertical shift (thumbfan)
-  mcux: 4.5             # horizontal shift (MCU) 
-  mcuy: 1.1ky           # vertical shift (MCU)
-  trrsx: 0.85kx         # horizontal shift (TRRS jack)
-  trrsy: py             # vertical shift (TRRS jack)
+  px: 0.5kx - 2.5       # horizontal padding (matrix)
+  py: 0.5ky             # vertical padding (matrix)
+  tx: width - 5U + 5    # horizontal shift (thumb)
+  ty: 0.3ky             # vertical shift (thumb)
+  mcux: 4.5             # horizontal shift (mcu) 
+  mcuy: 1.1ky           # vertical shift (mcu)
+  trrsx: 0.85kx         # horizontal shift (trrs)
+  trrsy: py             # vertical shift (trrs)
 
 points:
   zones:
