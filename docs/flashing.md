@@ -1,4 +1,4 @@
-# clyde kmk firmware
+# Flashing Guide
 
 1. copy [CircuitPython](https://circuitpython.org/board/waveshare_rp2040_zero/) to RP2040 Zero
     ```sh
