@@ -19,9 +19,6 @@
     cp ~/repos/risha/firmware/kmk/main.py /run/media/sam/RISHAL 
     ```
     Repeat for `RISHAR`
-4. Copy board firmware to each RP2040 Zero. Use Piantor firmware as a starting point
-    - https://raw.githubusercontent.com/cairnm/kmk_firmware/piantor/boards/beekeeb/piantor/kb.py
-    - https://raw.githubusercontent.com/cairnm/kmk_firmware/piantor/boards/beekeeb/piantor/main.py 
 
 ## docs
 
