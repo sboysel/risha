@@ -49,7 +49,8 @@ class KMKKeyboard(_KMKKeyboard):
     def __init__(self):
         # create and register the scanner
         self.matrix = KeysScanner(
-            pins = _KEY_CFG_RIGHT if isRight == True else _KEY_CFG_LEFT
+            pins = _KEY_CFG_RIGHT if isRight == True else _KEY_CFG_LEFT,
+            value_when_pressed = false
         )
 
     # flake8: noqa
